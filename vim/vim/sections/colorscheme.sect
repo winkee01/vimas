@@ -1,0 +1,9 @@
+Plug 'raphamorim/lucario'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'tomasr/molokai'
+Plug 'itchyny/lightline.vim'
+
+" Plug 'rakr/vim-one'
+" Plug 'bluz71/vim-moonfly-colors'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'

@@ -1,0 +1,1 @@
+let rooter_manual_only = 1

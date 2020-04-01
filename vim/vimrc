@@ -1,0 +1,101 @@
+set nocompatible " must be first
+set encoding=utf-8
+
+" ================ General Config ====================
+set number
+set backspace=indent,eol,start  " Allow backspace in insert mode
+set history=1000                " Store lots of :cmdline history
+set showcmd                     " Show what command you are typing at the bottom
+set showmode                    " Show current mode down the bottom
+set gcr=a:blinkon0              " Disable cursor blink
+set visualbell                  " No sounds
+set autoread                    " Reload files changed outside vim
+set clipboard+=unnamed          " Global clipboard
+" set paste                     " Causing auto-pairs not work
+
+"set numberwidth=1          " Width automatically increase to fit the width of maximun number of line, default 4
+set whichwrap+=<,>,[,],h,l  " Make these chars can go beyond current line
+set vb t_vb=                " disable visualbell and window flashing when error occurs
+
+set hidden " buffer resides in hidden
+
+syntax on
+
+
+" == Indentation ==
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab
+
+set cindent             " ----------------- C/C++ Code Style Setting --------------
+                        " V select a block of code, then =, code will auto indent
+                        " :set paste before do a paste where the buffer is
+                        " another file, after paste, :set nopaste to get back
+                        " autoindent
+
+filetype plugin on
+filetype indent on
+
+set list listchars=tab:\ \ ,trail:· " Display tabs and trailing spaces visually
+set nowrap
+set linebreak
+set nostartofline
+
+set foldmethod=indent   "fold based on indent
+set foldnestmax=3       "deepest fold is 3 levels
+set nofoldenable        "dont fold by default
+" set viminfo='100,f1
+
+ " Enable a menu at the bottom of the window for command completion when type command in vim
+set wildmenu  wildmode=full
+set wildchar=<Tab> wildcharm=<C-Z>
+
+set scrolloff=3         "Start scrolling when we're 3 lines away from margins
+set sidescrolloff=5
+set sidescroll=1
+set incsearch       " Find the next match as we type the search
+set hlsearch        " Highlight searches by default
+set ignorecase      " Ignore case when searching...
+set smartcase       " ...unless we type a capital
+
+" ================ Completion =======================
+
+set wildmode=list:longest
+set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~,*.so,*.swp,*.zip "stuff to ignore when tab completing
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
+
+" Turn off auto-indent when pasting text
+:set pastetoggle=<F3>
+
+" == Turn Off Swap Files ==
+set noswapfile
+set nobackup
+set nowb
+
+if has('persistent_undo')
+  let myUndodir = expand('$HOME/.undodir')
+  if !isdirectory(myUndodir)
+    call system('mkdir -p ' . myUndodir)
+  endif
+
+  let &undodir = myUndodir
+  set undofile
+  set undolevels=5000
+  set undoreload=10000
+endif
+
+" ================ Custom Settings ========================
+so ~/.vim/load.vim

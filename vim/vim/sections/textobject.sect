@@ -1,0 +1,18 @@
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'wellle/targets.vim'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-function'
+Plug 'kana/vim-textobj-datetime'
+Plug 'kana/vim-textobj-line'
+Plug 'pocke/vim-textobj-markdown'
+Plug 'coderifous/textobj-word-column.vim'
+" Plug 'glts/vim-textobj-comment'
+
+" language
+Plug 'jeetsukumaran/vim-pythonsense'
+Plug 'mjbrownie/django-template-textobjects'
+" Plug 'lucapette/vim-textobj-underscore'
+" Plug 'thinca/vim-textobj-function-javascript'
+" Plug 'osyo-manga/vim-textobj-blockwise'
+" Plug 'osyo-manga/vim-textobj-multiblock'

@@ -1,0 +1,21 @@
+Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'AndrewRadev/undoquit.vim'
+Plug 'airblade/vim-rooter'
+
+" plug 'rking/ag.vim'
+" Plug 'Shougo/defx.nvim'
+" Plug 'roxma/nvim-yarp'
+" Plug 'roxma/vim-hug-neovim-rpc'
+
+" Terminal integration
+" Plug 'vim-scripts/sudo.vim'
+" Plug 'christoomey/vim-tmux-navigator'
+
+" Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'JazzCore/ctrlp-cmatcher'
+" Plug 'xolox/vim-misc'
+" Plug 'xolox/vim-session'
+
+" Plug 'jistr/vim-nerdtree-tabs'

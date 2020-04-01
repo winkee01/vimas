@@ -1,0 +1,31 @@
+Plug 'tpope/vim-surround'
+Plug 'briandoll/change-inside-surroundings.vim'
+
+Plug 'justinmk/vim-sneak'
+Plug 'andymass/vim-matchup'
+Plug 'easymotion/vim-easymotion'
+Plug 'kshenoy/vim-signature'
+" Plug 'vim-scripts/camelcasemotion'
+
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-repeat'
+Plug 'vim-scripts/lastpos.vim'
+Plug 'mbbill/undotree'
+Plug 'junegunn/vim-peekaboo'
+
+" Plug 'skwp/YankRing.vim'
+" Plug 'chrisbra/NrrwRgn'
+" Plug 'tpope/vim-ragtag'
+
+" Feature
+" Plug 'AndrewRadev/splitjoin.vim'
+" Plug 'kristijanhusak/vim-multiple-cursors'
+" Plug 'bogado/file-line'
+" Plug 'goldfeld/ctrlr.vim'
+
+" Plug 'vim-scripts/AnsiEsc.vim'
+" Plug 'vim-scripts/AutoTag'
+" Plug 'editorconfig/editorconfig-vim'
+
+" Plug 'haya14busa/incsearch.vim'
+" Plug 'henrik/vim-indexed-search'

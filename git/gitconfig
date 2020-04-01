@@ -1,0 +1,45 @@
+# use 'git config -l' to list all config info
+# use 'git config --global core.editor "/usr/bin/vim"' to add a config variable
+[alias]
+    aa = add --all
+    br = branch
+    bv = branch -vv
+    ba = branch -ra
+    bd = branch -d
+    ca = commit --amend
+    cb = checkout -b
+    cm = commit -a --amend -C HEAD
+    amno = commit -a --amend --no-edit
+    am = commit --amend -m
+    ci = commit -a -v
+    co = checkout
+    pr = pull --rebase
+    ss = stash save
+    sh = stash show
+    sp = stash pop
+    di = diff
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+    ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    oneline = log --oneline
+    mm = merge --no-ff
+    st = status --short --branch
+    tg = tag -a
+    pu = push --tags
+    pr = pull --rebase
+    un = reset --hard HEAD
+    uh = reset --hard HEAD^
+    mt = mergetool
+[branch]
+    autosetuprebase = always
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[core]
+    editor = /usr/bin/vim
+[http]
+[https]
+[user]
+	name = xxx
+	email = abc@123.com

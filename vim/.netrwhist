@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/winkee/dev/juniway'
+let g:netrw_dirhist_7='/Users/winkee/dev/juniway/source/_posts/linux'
+let g:netrw_dirhist_6='/Users/winkee/dev/juniway/source/_posts/tool_and_build'
+let g:netrw_dirhist_5='/Users/winkee/dev/juniway/source/_posts/linux'
+let g:netrw_dirhist_4='/Users/winkee/dev/go/basic/client'
+let g:netrw_dirhist_3='/Users/winkee/dev/go/basic'
+let g:netrw_dirhist_2='/Users/winkee/dev/go/basic/client'
+let g:netrw_dirhist_1='/Users/winkee'
