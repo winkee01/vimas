@@ -1,0 +1,1 @@
+snippets can fasten code writing.
