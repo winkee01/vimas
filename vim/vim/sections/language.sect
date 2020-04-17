@@ -23,6 +23,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'kh3phr3n/python-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
+Plug 'ocaml/merlin'
 
 " Plug 'natebosch/vim-lsc'
 " Plug 'ajh17/VimCompletesMe'
