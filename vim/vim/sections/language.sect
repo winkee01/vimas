@@ -1,4 +1,5 @@
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'gabrielelana/vim-markdown'
 
 Plug 'jiangmiao/auto-pairs'
 " Plug 'tpope/vim-endwise'
