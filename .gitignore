@@ -1,8 +1,6 @@
 *un~
 .DS_Store
 vim/vim/backups
-vim/vim/view
-vim/vim/.netrwhist
 vim/vim/tmp
 vim/vim/spell
 vim/vim/.vundles
@@ -11,6 +9,9 @@ vim/vim/sessions
 vim/vim/plugged
 vim/vim/autoload
 vim/vim/coc-settings.json
+vim/vim/view
+vim/vim/.netrwhist
+vim/.netrwhits
 .netrwhis
 tags
 .tags

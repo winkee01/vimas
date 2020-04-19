@@ -45,7 +45,7 @@ For cpp, we have below three:
 
 ## Language Server Installation
 
-#### (1) clangd (MaxOS)
+#### (1) clangd
 
 for MacOS:
 
@@ -53,7 +53,7 @@ for MacOS:
 
 for Ubuntu:
 
-    sudo apt-get install clangd-9
+    apt-get install clangd
 
 for Binary package
 
@@ -62,7 +62,7 @@ for Binary package
 - export `PATH=`
 
 
-**clangd** uses two config file `compile_commands.json` and `compile_flags.txt`, You can use either of them.
+**clangd** uses two config files: `compile_commands.json` and `compile_flags.txt`, you can use either of them.
 
 example `compile_commands.json`
 
