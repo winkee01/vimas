@@ -11,7 +11,7 @@ When you get familiar with code snippets, it's recommanded to use your own custo
 - honza/vim-snippets
 
 ## symbol indexing
-  -
+
 - ctags (Universal Ctags)
 - GNU Global (aka gtags, add symbol reference)
 - vim-gutentags (vim plugin that automatically manages tags generation using `ctags` or `gtags` asyncronously)
@@ -89,8 +89,6 @@ example `compile_flags.txt`
 -isystem/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include
 -isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
 ```
-
-
 
 #### (2) ccls
 

@@ -1,0 +1,16 @@
+snippet main "" !b
+int main(int argc, char *argv[]) {
+    ${VISUAL}$0
+    return 0;
+}
+endsnippet
+snippet st "struct denifition" !b
+struct ${1: `!p snip.rv = (snip.basename or "name") + "_t"} {
+    ${0:}
+}
+endsnippet
+snippet fun "function declaration" !b
+${1:void} ${2:function_name}($3) {
+    ${VISUAL}$0
+}
+endsnippet

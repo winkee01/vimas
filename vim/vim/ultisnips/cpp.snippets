@@ -1,0 +1,69 @@
+snippet incc "" !b
+#include <iostream>
+$0
+endsnippet
+snippet incs "" !b
+#include <string>
+$0
+endsnippet
+snippet incv "" !b
+#include <vector>
+$0
+endsnippet
+snippet incst "" !b
+#include <stack>
+$0
+endsnippet
+snippet incq "" !b
+#include <queue>
+$0
+endsnippet
+snippet incd "" !b
+#include <deque>
+$0
+endsnippet
+snippet incm "" !b
+#include <map>
+$0
+endsnippet
+snippet incum "" !b
+#include <unordered_map>
+$0
+endsnippet
+snippet incset "" !b
+#include <set>
+$0
+endsnippet
+snippet incuset "" !b
+#include <unordered_set}
+$0
+endsnippet
+snippet incb "" !b
+#include <boost/${1}>
+$0
+endsnippet
+snippet incp "" !b
+#include <poco/${1}>
+$0
+endsnippet
+snippet ustd "" !b
+using namespace std;
+$0
+endsnippet
+snippet ustb "" !b
+using namespace boost::${1};
+$0
+endsnippet
+snippet class "class" !b
+class ${1:Class}{
+public:
+    // constructors, asssignment, destructor
+    $1();
+    $1(const $1&);
+    $1& operator=(const $1&);
+    ~$1();
+    $2
+private:
+    $3
+};
+endsnippet

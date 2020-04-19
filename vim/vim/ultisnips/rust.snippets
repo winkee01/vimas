@@ -1,0 +1,23 @@
+snippet fnd "Function declaration" !b
+fn ${1:function_name}(${2})${3} {
+    $0
+}
+endsnippet
+snippet res< "Result<T, E>"
+Result<${1:~str}, ${2:()}>
+endsnippet
+snippet std "Struct declaration" !b
+struct ${1} {
+    $0
+}
+endsnippet
+snippet impl "Struct/Trait implementation" !b
+impl ${1:Type/Trait} for ${2:Type} {
+    $0
+}
+endsnippet
+snippet impst "Struct/Trait implmentation" !b
+impl ${1:Type/Trait} {
+    $0
+}
+endsnippet
