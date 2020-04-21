@@ -97,5 +97,8 @@ if has('persistent_undo')
   set undoreload=10000
 endif
 
+" auto commands
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+
 " ================ Custom Settings ========================
 so ~/.vim/load.vim
