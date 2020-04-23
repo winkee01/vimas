@@ -43,8 +43,8 @@ nmap <Leader>M :Maps<CR>
 " nmap <Leader>s :Filetypes<CR>
 
 " Loop select by Ctrl-j/k
-nnoremap <C-j> :bn<CR>
-nnoremap <C-k> :bp<CR>
+nnoremap <C-n> :bn<CR>
+nnoremap <C-p> :bp<CR>
 
 " export FZF_DEFAULT_COMMAND='ag -u -g ""'
 " export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND

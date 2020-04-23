@@ -2,6 +2,7 @@ Plug 'raphamorim/lucario'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'tomasr/molokai'
 Plug 'itchyny/lightline.vim'
+Plug 'caglartoklu/borlandp.vim'
 
 " Plug 'rakr/vim-one'
 " Plug 'bluz71/vim-moonfly-colors'

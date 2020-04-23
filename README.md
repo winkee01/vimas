@@ -173,11 +173,11 @@ Please check `doc/*` for detailed introduction in how to install these dependenc
 TODO
 
 - Movement(vertically/horizontally, cross-file, etc)
-- Ctags/Gtags
+- <del>Ctags/Gtags</del>
 - Displaying: status, color, highlight, etc
 - Shortcuts/Mappings, utilities, etc
-- Project (fuzzy finding, grep, etc)
-- Code Snips, auto completion, syntax check, etc.
+- Project (fuzzy find, grep, etc)
+- Code Snippets, auto completion, syntax check, etc.
 - Code formatting, Commentiong, etc.
 - Text objects
 

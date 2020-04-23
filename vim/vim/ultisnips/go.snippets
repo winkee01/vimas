@@ -1,0 +1,15 @@
+snippet fpln "fmt.Println" !b
+fmt.Println($1, $2)
+endsnippet
+snippet lpln "fmt.Println" !b
+log.Println($1, $2)
+endsnippet
+snippet pkg "package main" !b
+package ${1:main}
+$0
+endsnippet
+snippet funcm "member function" !b
+func (${1:receiver}) ${2:name}(${3:param})${4/(.+)/ /}${4:type} {
+    ${0:${VISUAL}}
+}
+endsnippet

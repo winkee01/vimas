@@ -38,8 +38,26 @@
     branch = auto
 [core]
     editor = /usr/bin/vim
+[diff]
+    tool = bcomp
+[difftool]
+    prompt = false
+[difftool "bcomp"]
+    trustExitCode = true
+    cmt = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE"
+[merge]
+    tool = bcomp
+[mergetool]
+    prompt = false
+[mergetool "sourcetree"]
+    cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[mergetool "bcomp"]
+    cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+    trustExitCode = true
 [http]
 [https]
 [user]
-	name = xxx
-	email = abc@123.com
+    name = abc
+    email = abc@gmail.com
+

@@ -1,10 +1,8 @@
 snippet incc "" !b
-#include <iostream>
-$0
+#include <iostream>$0
 endsnippet
 snippet incs "" !b
-#include <string>
-$0
+#include <string>$0
 endsnippet
 snippet incv "" !b
 #include <vector>
@@ -22,7 +20,7 @@ snippet incd "" !b
 #include <deque>
 $0
 endsnippet
-snippet incm "" !b
+snippet incmp "" !b
 #include <map>
 $0
 endsnippet
@@ -38,20 +36,24 @@ snippet incuset "" !b
 #include <unordered_set}
 $0
 endsnippet
-snippet incb "" !b
-#include <boost/${1}>
+snippet inct "" !b
+#include <thread>
 $0
 endsnippet
-snippet incp "" !b
-#include <poco/${1}>
+snippet incm "" !b
+#include <mutex>
 $0
 endsnippet
-snippet ustd "" !b
-using namespace std;
+snippet inccv "" !b
+#include <condition_variable>
 $0
 endsnippet
-snippet ustb "" !b
-using namespace boost::${1};
+snippet incft "" !b
+#include <future>
+$0
+endsnippet
+snippet incch "" !b
+#include <chrono>
 $0
 endsnippet
 snippet class "class" !b
@@ -66,4 +68,14 @@ public:
 private:
     $3
 };
+endsnippet
+snippet if
+if {
+    ${VISUAL}
+}
+endsnippet
+snippet ifelse
+if else {
+    ${VISUAL}
+}
 endsnippet

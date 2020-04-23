@@ -14,3 +14,41 @@ endfunction
 
 command! ProjectFiles execute 'Files' s:find_git_root()
 ```
+
+#### mappings
+
+you can have Ctrl-P like this:
+
+```
+nnoremap <C-p> :Files<Cr>
+```
+
+## ripgrep
+ripgrep is a fast grep utility that fzf can plug on. the binary name is **rg**.
+
+#### Installation
+
+```
+$ brew install ripgrep
+$ sudo yum install ripgrep
+$ sudo apt-get install ripgrep
+```
+
+Check [BurntSushi/ripgrep][ripgrep] for more details
+
+[ripgrep]:https://github.com/BurntSushi/ripgrep#installation
+
+#### Work with fzf
+
+```
+set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
+# equivalent bash / zsh:
+# export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+```
+
+**mappings**
+
+```
+nnoremap <C-g> :Rg<Cr>
+```
+

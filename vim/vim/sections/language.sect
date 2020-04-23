@@ -5,7 +5,6 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'tpope/vim-endwise'
 " Plug 'rstacruz/vim-closer'
-Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'tomtom/tcomment_vim'
 Plug 'honza/vim-snippets'
@@ -18,6 +17,7 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'nelstrom/vim-markdown-preview'
 
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'pechorin/any-jump.vim'
 
 Plug 'dag/vim-fish'
 " Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
@@ -35,7 +35,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'w0rp/ale'
 
 " ==============================================
-" Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 " Plug "mattn/webapi-vim.git"
 " Plug 'skwp/vim-html-escape'
 " Plug 'mxw/vim-jsx'
@@ -43,4 +43,5 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Format
 Plug 'junegunn/vim-easy-align'
-" Plug 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
+Plug 'juniway/indent-bar'

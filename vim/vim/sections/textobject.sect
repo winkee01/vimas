@@ -4,10 +4,12 @@ Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-function'
 Plug 'kana/vim-textobj-datetime'
-Plug 'kana/vim-textobj-line'
+" Plug 'kana/vim-textobj-line'
 Plug 'pocke/vim-textobj-markdown'
 Plug 'coderifous/textobj-word-column.vim'
 " Plug 'glts/vim-textobj-comment'
+
+Plug 'haya14busa/vim-textobj-function-syntax'
 
 " language
 Plug 'jeetsukumaran/vim-pythonsense'

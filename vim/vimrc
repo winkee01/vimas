@@ -13,14 +13,11 @@ set autoread                    " Reload files changed outside vim
 set clipboard+=unnamed          " Global clipboard
 " set paste                     " Causing auto-pairs not work
 
-"set numberwidth=1          " Width automatically increase to fit the width of maximun number of line, default 4
+set numberwidth=1           " minimum column size to display line numbers
 set whichwrap+=<,>,[,],h,l  " Make these chars can go beyond current line
 set vb t_vb=                " disable visualbell and window flashing when error occurs
 
-set hidden " buffer resides in hidden
-
-syntax on
-
+set hidden
 
 " == Indentation ==
 set autoindent
@@ -37,10 +34,12 @@ set cindent             " ----------------- C/C++ Code Style Setting -----------
                         " another file, after paste, :set nopaste to get back
                         " autoindent
 
+syntax on
 filetype plugin on
 filetype indent on
 
-set list listchars=tab:\ \ ,trail:· " Display tabs and trailing spaces visually
+set list listchars=tab:\ \ ,trail:·
+"set list listchars=tab:→\ ,space:·,nbsp:␣,eol:¶,precedes:«,extends:»,trail:·
 set nowrap
 set linebreak
 set nostartofline
