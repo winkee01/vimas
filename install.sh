@@ -10,7 +10,7 @@ ASK="false"
 ISNVIM="false"
 CLONE="true"
 METHOD="symlink"
-PROJ="vimas"
+PROJ="vim2020"
 nvim="$HOME/.config/nvim"
 
 plug_path=$HOME/.vim/autoload/plug.vim

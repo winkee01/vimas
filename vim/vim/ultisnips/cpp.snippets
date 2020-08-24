@@ -2,64 +2,87 @@ snippet incc "" !b
 #include <iostream>$0
 endsnippet
 snippet incs "" !b
-#include <string>$0
+#include <string>
+endsnippet
+snippet incsv "" !b
+#include <string_view>
+endsnippet
+snippet incss "" !b
+#include <sstream>
 endsnippet
 snippet incv "" !b
 #include <vector>
-$0
+endsnippet
+snippet inca "" !b
+#include <array>
 endsnippet
 snippet incst "" !b
 #include <stack>
-$0
 endsnippet
 snippet incq "" !b
 #include <queue>
-$0
 endsnippet
-snippet incd "" !b
+snippet incl "" !b
+#include <list>
+endsnippet
+snippet incde "" !b
 #include <deque>
-$0
 endsnippet
-snippet incmp "" !b
+snippet incm "" !b
 #include <map>
-$0
 endsnippet
 snippet incum "" !b
 #include <unordered_map>
-$0
 endsnippet
-snippet incset "" !b
+snippet incse "" !b
 #include <set>
-$0
 endsnippet
-snippet incuset "" !b
-#include <unordered_set}
-$0
+snippet incus "" !b
+#include <unordered_set>
 endsnippet
 snippet inct "" !b
 #include <thread>
-$0
 endsnippet
-snippet incm "" !b
-#include <mutex>
-$0
+snippet incmu "" !b
+#include <mutex>$0
 endsnippet
 snippet inccv "" !b
 #include <condition_variable>
-$0
 endsnippet
 snippet incft "" !b
 #include <future>
-$0
 endsnippet
 snippet incch "" !b
 #include <chrono>
-$0
 endsnippet
+snippet incr "" !b
+#include <random>
+endsnippet
+snippet incal "" !b
+#include <algorithm>
+endsnippet
+snippet incli "" !b
+#include <limits>
+endsnippet
+snippet incn "" !b
+#include <numeric>
+endsnippet
+snippet incit "" !b
+#include <iterator>
+endsnippet
+snippet incu "" !b
+#include <utility>
+endsnippet
+snippet incbi "" !b
+#include <bitset>
+endsnippet
+snippet inch "" !b
+#include "$1"
+endsnippet
+
 snippet class "class" !b
 class ${1:Class}{
 public:
-    // constructors, asssignment, destructor
     $1();
     $1(const $1&);
     $1& operator=(const $1&);
@@ -68,6 +91,11 @@ public:
 private:
     $3
 };
+endsnippet
+snippet struct "struct" !b
+struct ${1:Struct}{
+    $2
+};$0
 endsnippet
 snippet if
 if {
@@ -78,4 +106,134 @@ snippet ifelse
 if else {
     ${VISUAL}
 }
+endsnippet
+snippet v< "" !wi
+vector<${1:int}> 
+endsnippet
+snippet vi< "" !wi
+vector<int> 
+endsnippet
+snippet v<& "" !wi
+vector<${1:int}>& 
+endsnippet
+snippet vi<& "" !wi
+vector<int>& 
+endsnippet
+snippet vi&< "" !wi
+vector<int>& 
+endsnippet
+snippet cvi&< "" !wi
+const vector<int>& 
+endsnippet
+snippet vic&< "" !wi
+const vector<int>& 
+endsnippet
+snippet vv< "" !wi
+vector<vector<${1:int}>>
+endsnippet
+snippet vvi< "" !wi
+vector<vector<int>> 
+endsnippet
+snippet vvi<& "" !wi
+vector<vector<int>>& 
+endsnippet
+snippet vvi&< "" !wi
+vector<vector<int>>& 
+endsnippet
+snippet vii< "" !wi
+vector<pair<int, int>>& 
+endsnippet
+snippet vic< "" !wi
+vector<pair<int, char>>& 
+endsnippet
+snippet vci< "" !wi
+vector<pair<char, int>>& 
+endsnippet
+
+snippet vd< "" !wi
+vector<double> 
+endsnippet
+snippet vd&< "" !wi
+vector<double>& 
+endsnippet
+snippet vvd< "" !wi
+vector<vector<double>> 
+endsnippet
+snippet vvd<& "" !wi
+vector<vector<double>>& 
+endsnippet
+snippet vvd&< "" !wi
+vector<vector<double>>& 
+endsnippet
+
+snippet vb< "" !wi
+vector<bool> 
+endsnippet
+snippet vb&< "" !wi
+vector<bool>& 
+endsnippet
+snippet vvb< "" !wi
+vector<vector<bool>> 
+endsnippet
+snippet vvb<& "" !wi
+vector<vector<bool>>& 
+endsnippet
+
+snippet vc< "" !wi
+vector<char> 
+endsnippet
+snippet vc&< "" !wi
+vector<char>& 
+endsnippet
+snippet vvc< "" !wi
+vector<vector<char>> 
+endsnippet
+snippet vvc<& "" !wi
+vector<vector<char>>& 
+endsnippet
+snippet vvc&< "" !wi
+vector<vector<char>>& 
+endsnippet
+snippet vs< "" !wi
+vector<string> 
+endsnippet
+snippet vs&< "" !wi
+vector<string>& 
+endsnippet
+
+snippet si< "" !wi
+stack<int> 
+endsnippet
+snippet sN< "" !wi
+stack<Node*> 
+endsnippet
+snippet qN< "" !wi
+queue<Node*> 
+endsnippet
+
+snippet sei "" !b
+set<int> 
+endsnippet
+snippet usi< "" !b
+unordered_set<int> 
+endsnippet
+snippet us< "" !b
+unordered_set<${1:int}> 
+endsnippet
+
+snippet umii< "" !b
+unordered_map<int, int> 
+endsnippet
+snippet umNi< "" !b
+unordered_map<Node*, int> 
+endsnippet
+
+snippet usingv
+using std::vector;
+endsnippet
+snippet usings
+using std::string;
+endsnippet
+snippet usingcout
+using std::cout;
 endsnippet

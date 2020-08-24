@@ -1,3 +1,5 @@
+" Some vc plugins will cause slowness, so I don't quite like them
+
 " Plug "gregsexton/gitv"
 " Plug "mattn/gist-vim"
 " Plug "tpope/vim-fugitive"

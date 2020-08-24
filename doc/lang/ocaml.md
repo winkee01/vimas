@@ -11,12 +11,14 @@ Some default shortcuts are already there to use.
 - \t tells you the type of the thing under the cursor (if you compiled with -annot)
 
 
-
 #### plugins
+You may need some of below plugins for syntax checking and autocompletion.
+
 - scrooloose/syntastic  `syntax check`
 - def-lkb/merlin        `auto completion`
 - jpalardy/vim-slime    `REPL integration`
 - OCamlPro/ocp-indent   `ocp-indent`
+
 
 #### usage
 

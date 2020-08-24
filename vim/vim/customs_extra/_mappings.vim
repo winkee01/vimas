@@ -29,51 +29,12 @@ nnoremap <silent> <c-j> :let current_win = winnr()<CR><c-w>j:if current_win == w
 nnoremap <silent> <c-k> :let current_win = winnr()<CR><c-w>k:if current_win == winnr() \| wincmd r \| endif<CR>
 nnoremap <silent> <c-l> :let current_win = winnr()<CR><c-w>l:if current_win == winnr() \| wincmd t \| endif<CR>
 
-" (2) Switching tabs
-" Alt < to previous tab
-" Alt > to next tab
-" Alt n to create new tab
-" Alt w to close current tab
-" Alt 0 to first tab
-" Alt 9 to last tab
-" Alt o to tabonly
-nnoremap <silent> ≤   :tabprevious<CR>
-nnoremap <silent> ≥   :tabnext<CR>
-nnoremap <silent> ˜   :tabnew<CR>
-nnoremap <silent> ∑   :tabclose<CR>
-nnoremap <silent> º   :tabfirst<CR>
-nnoremap <silent> ª   :tablast<CR>
-" nnoremap <silent> ø   :tabonly<CR>
-" === CAUTION: ===
-" be careful with tabclose and tabonly, as once closed, can't be restored
-
-
-" inoremap <C-S-tab> <Esc>:tabprevious<CR>i
-" inoremap <C-tab>   <Esc>:tabnext<CR>i
-" inoremap <C-t>     <Esc>:tabnew<CR>
-" inoremap <C-S-w>   <Esc>:tabclose<CR>
-
-" MaxOSX: move cursor to begin/end of line in insert mode, meta-key disabled
-" Alt ; to end
-" Alt , to begin
-inoremap … <ESC>A
-inoremap ≤ <ESC>I
-
-" MacOSX: Move current line down/up
-" Alt j move down
-" Alt k move up
-" nnoremap ∆ :m .+1<CR>gv==gv
-" nnoremap ˚ :m .-2<CR>gv==gv
-inoremap ∆ <Esc>:m .+1<CR>gv==gvi
-inoremap ˚ <Esc>:m .-2<CR>gv==gvi
-" vnoremap ∆ :m '>+1<CR>gv=gv
-" vnoremap ˚ :m '<-2<CR>gv=gv
-
 " Keep visual selection when indenting
 xnoremap > >gv
 xnoremap < <gv
 
-" Auto indent pasted text
-" nnoremap p p=`]<C-o>
-" nnoremap P P=`]<C-o>
+inoremap <c-l> <ESC>o
+nnoremap <c-0> <c-w>>
 
+nnoremap <c-n> :bn<CR>
+nnoremap <c-p> :bp<CR>

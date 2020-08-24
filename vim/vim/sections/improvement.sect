@@ -22,8 +22,8 @@ Plug 'chrisbra/NrrwRgn'
 " Plug 'skwp/YankRing.vim'
 
 " Feature
+" Plug 'terryma/vim-multiple-cursors'
 " Plug 'AndrewRadev/splitjoin.vim'
-" Plug 'kristijanhusak/vim-multiple-cursors'
 " Plug 'bogado/file-line'
 " Plug 'goldfeld/ctrlr.vim'
 
@@ -33,3 +33,6 @@ Plug 'chrisbra/NrrwRgn'
 
 " Plug 'haya14busa/incsearch.vim'
 " Plug 'henrik/vim-indexed-search'
+
+" Profiling
+Plug 'tweekmonster/startuptime.vim'

@@ -46,6 +46,15 @@ For cpp, we have below three:
 ## Language Server Installation
 
 #### (1) clangd
+The features cland privdes include:
+
+- Errors and Warnings
+- Code Completion
+- Cross-references
+- Navigation
+- Hover
+- Formatting
+- Refactoring (e.g. auto rename all variable names)
 
 for MacOS:
 
@@ -90,6 +99,10 @@ example `compile_flags.txt`
 -isystem/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
 ```
 
+for more information about `clangd`, check [https://clangd.llvm.org/features.html#errors-and-warnings][]
+
 #### (2) ccls
 
 TODO
+
+[https://clangd.llvm.org/features.html#errors-and-warnings]:https://clangd.llvm.org/features.html#errors-and-warnings

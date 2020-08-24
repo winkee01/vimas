@@ -21,8 +21,21 @@ function reload
     source ~/.config/fish/config.fish
 end
 
+# fish can not capture multi-line output in a variable
+# so if we save the output to a variable and echo that var, new line will lose
+# issue: https://github.com/fish-shell/fish-shell/issues/159
 function ll
-    env CLICOLOR_FORCE=1 ls -lhtG $argv | awk '/^total/{next;} {print $6" "$7" "$8" "$9}'
+    set lines (env CLICOLOR_FORCE=1 ls -lhtG $argv | awk '/^total/{next;} {print $6" "$7" "$8" "$9}' | wc -l | string trim)
+    # set res (env CLICOLOR_FORCE=1 ls -lhtG $argv | awk '/^total/{next;} {print $6" "$7" "$8" "$9}')
+    # echo -e $res | less
+    # echo $lines
+    # echo (tput lines)
+    if test $lines -gt (tput lines)
+        env CLICOLOR_FORCE=1 ls -lhtG $argv | awk '/^total/{next;} {print $6" "$7" "$8" "$9}' | less -X
+        # -X option will prevent clearing the screen
+    else
+        env CLICOLOR_FORCE=1 ls -lhtG $argv | awk '/^total/{next;} {print $6" "$7" "$8" "$9}'
+    end
 end
 
 function la

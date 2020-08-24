@@ -3,6 +3,8 @@
 " <C-j>   advance to next tabstop
 " <C-k>   reverse to previous tabstop
 
+" Use below settings to avoid conflictions with Coc.nvim
+" because Coc.nvim use <C-j> to jump to next placeholder
 let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips"
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"

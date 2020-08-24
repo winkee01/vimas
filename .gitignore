@@ -8,7 +8,6 @@ vim/vim/bundle
 vim/vim/sessions
 vim/vim/plugged
 vim/vim/autoload
-vim/vim/coc-settings.json
 vim/vim/view
 vim/vim/.netrwhist
 vim/.netrwhits

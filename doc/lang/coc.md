@@ -7,6 +7,7 @@
 - node >= 8.10.0
 - yarn
 
+
 (1) neovim
 
 ```shell
@@ -15,11 +16,13 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 ```
 
+
 (2) node
 
 ```shell
 curl -sL install-node.now.sh | sh
 ```
+
 
 (3) yarn
 
@@ -27,9 +30,31 @@ curl -sL install-node.now.sh | sh
 curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
+
 ### Coc configurations
 
 Run `:CocConfig`, which will open main config file `~/.config/nvim/coc-settings.json` (empty for new installation).
+
+
+copy below settings into `~/.vim/coc-settings.json`
+or `~/.config/nvim/coc-settings.json`
+
+```json
+{
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": ["go.mod"],
+            "filetypes": ["go"]
+        },
+        "rust": {
+            "command": "rls",
+            "filetypes": ["rust"],
+            "rootPatterns": ["Cargo.toml"]
+        }
+    }
+}
+```
 
 
 ### Check Health

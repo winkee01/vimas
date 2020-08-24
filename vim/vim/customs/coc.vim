@@ -96,8 +96,9 @@ omap af <Plug>(coc-funcobj-a)
 
 " Use <TAB> for select selections ranges,
 " Note: This needs server support, like: coc-tsserver, coc-python
-nmap <silent> <TAB> <Plug>(coc-range-select)
-xmap <silent> <TAB> <Plug>(coc-range-select)
+" Warning: will cause ctrl-i or default <Tab> not work
+" nmap <silent> <TAB> <Plug>(coc-range-select)
+" xmap <silent> <TAB> <Plug>(coc-range-select)
 
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')

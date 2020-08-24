@@ -42,7 +42,7 @@ nmap <Leader>M :Maps<CR>
 " Search filetype syntaxs
 " nmap <Leader>s :Filetypes<CR>
 
-" Loop select by Ctrl-j/k
+" Loop select by Ctrl-p/n
 nnoremap <C-n> :bn<CR>
 nnoremap <C-p> :bp<CR>
 

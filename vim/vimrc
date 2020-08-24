@@ -34,9 +34,9 @@ set cindent             " ----------------- C/C++ Code Style Setting -----------
                         " another file, after paste, :set nopaste to get back
                         " autoindent
 
-syntax on
 filetype plugin on
 filetype indent on
+syntax on
 
 set list listchars=tab:\ \ ,trail:·
 "set list listchars=tab:→\ ,space:·,nbsp:␣,eol:¶,precedes:«,extends:»,trail:·

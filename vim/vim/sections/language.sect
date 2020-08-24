@@ -1,6 +1,7 @@
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'gabrielelana/vim-markdown'
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'machakann/vim-highlightedyank'
 
 Plug 'jiangmiao/auto-pairs'
 " Plug 'tpope/vim-endwise'
