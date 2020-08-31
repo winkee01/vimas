@@ -29,16 +29,21 @@ Note: the binary provided by rust-analyzer project is `ra_lsp_server`.
 :CocInstall coc-rust-analyzer
 ```
 
-If we don't want to use these extentions, we can simple config `coc-settings.json` to use the native binary.
-
-e.g.
+If we don't want to use these extentions, we can simple config `~/.config/nvim/coc-settings.json` to use the native binary as below:
 
 ```json
-  "languageserver": {
-    "rust": {
-      "command": "ra_lsp_server",
-      "filetypes": ["rust"],
-      "rootPatterns": ["Cargo.toml"]
-    }
+"languageserver": {
+  "rust": {
+    "command": "ra_lsp_server",
+    "filetypes": ["rust"],
+    "rootPatterns": ["Cargo.toml"]
   }
+}
 ```
+
+### Other official tools
+
+Clippy is a Rust linter.
+rustfmt formats Rust code according to style guidelines.
+
+

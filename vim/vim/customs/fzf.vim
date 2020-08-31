@@ -64,6 +64,8 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 
 command! FZFInsert call fzf#run({'sink': function('<sid>insert_sink')})
 
-
+" this mapping is usdef for riggrep
+" make sure we have installed riggrep
+nnoremap <C-g> :Rg<Cr>
 
 

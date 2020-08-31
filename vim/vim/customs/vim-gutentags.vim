@@ -51,5 +51,6 @@ let g:gutentags_generate_on_empty_buffer = 0
 "       \ 'vendor',
 "       \ 'Makefile',
 "       \ ]
+" call add(g:gutentags_project_info, {'type': 'go', 'file': 'go.mod'})
 
 command! -nargs=0 GutentagsClearCache call system('rm -rf' . g:gutentags_cache_dir . '/*')

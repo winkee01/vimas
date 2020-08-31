@@ -68,7 +68,7 @@ for Binary package
 
 - download release: [clangd release](https://github.com/clangd/clangd/releases)
 - copy `bin/clangd` to `/usr/local/bin/`
-- export `PATH=`
+- export `PATH=...`
 
 
 **clangd** uses two config files: `compile_commands.json` and `compile_flags.txt`, you can use either of them.
