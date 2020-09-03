@@ -2,22 +2,22 @@ let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'readonly', 'filename', 'modified' ] ]
+      \             [ 'fugitive', 'readonly', 'absolutepath', 'modified' ] ]
       \ },
       \ 'component_function': {
       \   'fugitive': 'MyFugitive',
       \   'readonly': 'MyReadonly',
       \   'filename': 'MyFilename',
       \ },
-      \ 'separator': { 'left': '⮀', 'right': '⮂' },
-      \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
       \ }
 
 function! MyReadonly()
   if &filetype == "help"
     return ""
   elseif &readonly
-    return "⭤ "
+    return " ⃠ "
   else
     return ""
   endif

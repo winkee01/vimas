@@ -4,7 +4,7 @@ Before the LSP gets hot attention, the most prevail tools facilitate the go prog
 
 Nowadays, the Golang team releases gopls, to serve as the official LSP.
 
-##### Install gopls
+#### Install gopls
 
 ```shell
 go get golang.org/x/tools/gopls@latest
@@ -35,3 +35,10 @@ gopls -v serve -listen :10888 -rpc.trace
 
 we can use `supervisor` to host gopls.
 
+
+### gofmt
+Automatically run gofmt for \*.go file when :w
+
+```
+au BufWritePost *.go !gofmt -w %
+```
