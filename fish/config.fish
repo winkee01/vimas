@@ -2,7 +2,6 @@
 #     set BASE16_SHELL "$HOME/.config/base16-shell/"
 #     source "$BASE16_SHELL/profile_helper.fish"
 # end
-
 if test -f ~/.fishmarks/marks.fish;
     source ~/.fishmarks/marks.fish;
 end
@@ -13,6 +12,8 @@ end
 
 set -gx LC_ALL en_US.UTF-8
 # set -Ux LANG en_US.UTF-8
+
+set -gx FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git'"
 
 #set -gx LLVM_HOME /opt/llvm
 #set -gx LD_LIBRARY_PATH /usr/local/lib:/opt/llvm/lib $LD_LIBRARY_PATH:

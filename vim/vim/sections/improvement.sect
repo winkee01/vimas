@@ -20,6 +20,7 @@ Plug 'AndrewRadev/linediff.vim'
 Plug 'chrisbra/NrrwRgn'
 " Plug 'tpope/vim-ragtag'
 " Plug 'skwp/YankRing.vim'
+" Plug 'nelstorm/vim-visual-star-search'
 
 " Feature
 " Plug 'terryma/vim-multiple-cursors'
@@ -36,3 +37,7 @@ Plug 'chrisbra/NrrwRgn'
 
 " Profiling
 Plug 'tweekmonster/startuptime.vim'
+
+"Plug 'terryma/vim-expand-region'
+"Plug 'mhinz/vim-startify'
+"Plug 'ervandew/supertab'

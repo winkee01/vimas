@@ -2,7 +2,7 @@
 
 Before the LSP gets hot attention, the most prevail tools facilitate the go programming is **gocode**, which is packed into **vim-go**.
 
-Nowadays, the Golang team releases gopls, to serve as the official LSP.
+Nowadays, the Golang team releases **`gopls`**, to serve as the official LSP.
 
 #### Install gopls
 
@@ -37,8 +37,7 @@ we can use `supervisor` to host gopls.
 
 
 ### gofmt
-Automatically run gofmt for \*.go file when :w
+plugin `vim-autoformat` integrats a lot of autoformatters for differenct languages. It will use `gofmt` to by default for golang files.
 
-```
-au BufWritePost *.go !gofmt -w %
+### gotags
 ```

@@ -57,7 +57,3 @@
     trustExitCode = true
 [http]
 [https]
-[user]
-    name = abc
-    email = abc@gmail.com
-

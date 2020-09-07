@@ -24,9 +24,21 @@ Plug 'dag/vim-fish'
 " Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'rust-lang/rust.vim'
 Plug 'kh3phr3n/python-syntax'
-Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
 Plug 'ocaml/merlin'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'styled-components/vim-styled-components'
+Plug 'elzr/vim-json'
+Plug 'jparise/vim-graphql'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+Plug 'sheerun/vim-polyglot'
+" Plug "mattn/webapi-vim.git"
+" Plug 'skwp/vim-html-escape'
+" Plug 'jparise/vim-graphql'
 
 " Plug 'natebosch/vim-lsc'
 " Plug 'ajh17/VimCompletesMe'
@@ -34,13 +46,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Plug 'neomake/neomake', { 'for': ['rust', 'haskell', 'typescript'] }
 " Plug 'w0rp/ale'
-
-" ==============================================
-Plug 'sheerun/vim-polyglot'
-" Plug "mattn/webapi-vim.git"
-" Plug 'skwp/vim-html-escape'
-" Plug 'mxw/vim-jsx'
-" Plug 'jparise/vim-graphql'
 
 " Format
 Plug 'junegunn/vim-easy-align'

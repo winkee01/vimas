@@ -1,6 +1,7 @@
 Plug 'raphamorim/lucario'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'tomasr/molokai'
+Plug 'patstockwell/vim-monokai-tasty'
 Plug 'itchyny/lightline.vim'
 Plug 'caglartoklu/borlandp.vim'
 Plug 'nightsense/cosmic_latte'
@@ -8,6 +9,7 @@ Plug 'nightsense/cosmic_latte'
 " Monochrome colorschemes:
 Plug 'ewilazarus/preto'
 Plug 'Lokaltog/vim-monotone'
+Plug 'pgdouyon/vim-yin-yang'
 Plug 'cormacrelf/vim-colors-github'
 Plug 'fcpg/vim-fahrenheit'
 Plug 'archseer/colibri.vim'
@@ -32,3 +34,7 @@ Plug 'jaredgorski/fogbell.vim'
 " Plug 'bluz71/vim-moonfly-colors'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
+
+Plug 'Lokaltog/vim-distinguished'
+Plug 'wesgibbs/vim-irblack' "ir_black"
+Plug 'vim-scripts/peaksea' "peaksea

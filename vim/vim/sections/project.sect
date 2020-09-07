@@ -1,13 +1,16 @@
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'mileszs/ack.vim'
 Plug 'AndrewRadev/undoquit.vim'
 Plug 'airblade/vim-rooter'
 
+"Plug 'lambdalisue/fern.vim'
 " plug 'rking/ag.vim'
 " Plug 'Shougo/defx.nvim'
 " Plug 'roxma/nvim-yarp'
 " Plug 'roxma/vim-hug-neovim-rpc'
+" Plug 'dyng/ctrlsf.vim'
 
 " Terminal integration
 " Plug 'vim-scripts/sudo.vim'
@@ -19,3 +22,7 @@ Plug 'airblade/vim-rooter'
 " Plug 'xolox/vim-session'
 
 " Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'vim-scripts/bufexplorer.zip'
+" Plug 'vifm/vifm.vim'
+" Plug 'voldikss/vim-floaterm'
+" Plug 'mcchrish/nnn.vim'
