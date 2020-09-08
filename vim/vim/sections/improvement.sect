@@ -20,7 +20,6 @@ Plug 'AndrewRadev/linediff.vim'
 Plug 'chrisbra/NrrwRgn'
 " Plug 'tpope/vim-ragtag'
 " Plug 'skwp/YankRing.vim'
-" Plug 'nelstorm/vim-visual-star-search'
 
 " Feature
 " Plug 'terryma/vim-multiple-cursors'
@@ -32,6 +31,7 @@ Plug 'chrisbra/NrrwRgn'
 " Plug 'vim-scripts/AutoTag'
 " Plug 'editorconfig/editorconfig-vim'
 
+Plug 'bronson/vim-visual-star-search'
 " Plug 'haya14busa/incsearch.vim'
 " Plug 'henrik/vim-indexed-search'
 

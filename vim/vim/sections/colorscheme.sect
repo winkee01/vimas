@@ -5,6 +5,7 @@ Plug 'patstockwell/vim-monokai-tasty'
 Plug 'itchyny/lightline.vim'
 Plug 'caglartoklu/borlandp.vim'
 Plug 'nightsense/cosmic_latte'
+"Plug 'tomasiser/vim-code-dark'
 
 " Monochrome colorschemes:
 Plug 'ewilazarus/preto'
@@ -22,6 +23,7 @@ Plug 'CallumHoward/vim-neodark'
 Plug 'atelierbram/Base2Tone-vim'
 Plug 'logico/typewriter-vim'
 Plug 'morhetz/gruvbox'
+" gruvbox is an Intellij colorscheme
 
 " goyo will cause cursor blink in mac os
 " Plug 'junegunn/goyo.vim'

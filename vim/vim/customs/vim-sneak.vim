@@ -1,4 +1,4 @@
-nmap q <Plug>Sneak_s
-nmap Q <Plug>Sneak_S
-vmap q <Plug>Sneak_s
-vmap Q <Plug>Sneak_S
+nmap t <Plug>Sneak_s
+nmap T <Plug>Sneak_S
+vmap t <Plug>Sneak_s
+vmap T <Plug>Sneak_S

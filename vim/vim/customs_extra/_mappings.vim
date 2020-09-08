@@ -61,17 +61,19 @@ xnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 xnoremap <expr> <F8> ':%s/\<'.expand('<cword>').'\>/<&>/g<CR>'
 
 " 3) Search for visual selected text
-vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+"vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " 4) Replace visual selected text
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 
-" 5) Replace a few instance one by one
+" 5) Replace a few instance one by one, press . to repeat
+" cation: below mapping will cause delay when press single s.
 nnoremap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
 xnoremap <silent> s* "sy:let @/=@s<CR>cgn
 
 " Reference
 " https://vim.fandom.com/wiki/Search_and_replace_the_word_under_the_cursor
 " https://vim.fandom.com/wiki/Search_for_visually_selected_text
+" https://www.youtube.com/watch?v=fP_ckZ30gbs
 
 

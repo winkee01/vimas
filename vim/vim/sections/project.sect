@@ -5,7 +5,7 @@ Plug 'mileszs/ack.vim'
 Plug 'AndrewRadev/undoquit.vim'
 Plug 'airblade/vim-rooter'
 
-"Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern.vim'
 " plug 'rking/ag.vim'
 " Plug 'Shougo/defx.nvim'
 " Plug 'roxma/nvim-yarp'
