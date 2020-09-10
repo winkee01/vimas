@@ -24,16 +24,24 @@ Plug 'dag/vim-fish'
 " Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'rust-lang/rust.vim'
 Plug 'kh3phr3n/python-syntax'
-Plug 'mattn/emmet-vim'
 Plug 'ocaml/merlin'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components'
+Plug 'tbastos/vim-lua'
+Plug 'editorconfig/editorconfig-vim'
+
+" Web design
+Plug 'mattn/emmet-vim'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'mxw/vim-jsx'
 Plug 'elzr/vim-json'
 Plug 'jparise/vim-graphql'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'alvan/vim-closetag'
+Plug 'mlaursen/vim-react-snippets'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'hail2u/vim-css3-syntax' " updates vim's built-in css to support CSS3
+Plug 'cakebaker/scss-syntax.vim'
 
 Plug 'sheerun/vim-polyglot'
 " Plug "mattn/webapi-vim.git"
@@ -52,3 +60,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'juniway/indent-bar'
 Plug 'Chiel92/vim-autoformat'
+
+
+" Plug 'vimwiki/vimwiki', {'on': ['VimwikiDiaryIndex', 'VimwikiMakeDiaryNote']}
+
+
+

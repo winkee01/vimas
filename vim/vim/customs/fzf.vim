@@ -77,4 +77,3 @@ command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-h
 " this mapping is usdef for riggrep
 " make sure we have installed riggrep
 nnoremap <C-x> :Rg<Cr>
-

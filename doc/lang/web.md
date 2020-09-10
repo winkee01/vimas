@@ -36,6 +36,16 @@ Unfortunately, typescriptreact support is not perfect. It works in only simple c
 The issue is known but there’s no solution. I’ve tried `typescript-vim` and `vim-jsx-typescript` plugins but those not very good either. So I went ahead and fixed this specific case. But there are many other issues. Regex syntax highlighting can only get you so far. Semantic highlighting is on the way.
 
 
+### Snippets
+#### React
+- mlaursen/vim-react-snippets
+-
+Also, `honza/vim-snippets` has already included ES6 snippets for ReactJs in its `javascript-es6-react.snippets` file
+
+
+### Formatter
+`coc-prettier` can be used to format javascript code.
+
 ### LSP (for intellisense, autocompletion, etc)
 
 ```
@@ -43,7 +53,7 @@ coc.nvim
 vim-lsp
 ```
 
-for TypeScript, 
+for TypeScript,
 ```
 neoclide/coc-tsserver
 theia-ide/typescript-language-server
@@ -65,7 +75,7 @@ mattn/emmet-vim
 
 
 ### common
-- vim-surround 
+- vim-surround
 - coc.nvim
 - vim-prettier
 - ultisnips

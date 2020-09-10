@@ -12,9 +12,9 @@ alias tmux 'tmux -2'
 alias tn 'tmuxinator'
 
 # Application aliases
-alias gbs 'gitbook serve'
-alias gb 'gitbook'
-alias chrome '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+# alias gbs 'gitbook serve'
+# alias gb 'gitbook'
+# alias chrome '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
 ## functions
 function reload
@@ -74,3 +74,11 @@ end
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+function chrome
+  /usr/bin/open -a '/Applications/Google Chrome.app' $argv[1:]
+end
+
+function google
+  /usr/bin/open -a '/Applications/Google Chrome.app' "https://www.google.co.uk/search?q=$argv[1]"
+end
