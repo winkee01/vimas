@@ -6,17 +6,20 @@ let g:go_fmt_command = "goimports"
 
 " let g:go_def_mapping_enabled = 0
 
+" if we have installed gopls, uncomment below lines to enable vim-go to use gopls
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 
 
 " Enabled by default
-let g:go_gopls_enabled = 1
 let g:go_gopls_deep_completion = 1
 let g:go_gopls_fuzzy_matching = 1
 
+" disable information message
+let g:go_gopls_enabled = 0
 let g:go_echo_command_info = 0
 let g:go_version_warning = 0
+
 
 " function! NormalStatusline()
 "     " emulate 'ruler'

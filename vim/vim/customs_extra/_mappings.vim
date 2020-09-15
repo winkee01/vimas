@@ -76,4 +76,3 @@ xnoremap <silent> s* "sy:let @/=@s<CR>cgn
 " https://vim.fandom.com/wiki/Search_for_visually_selected_text
 " https://www.youtube.com/watch?v=fP_ckZ30gbs
 
-

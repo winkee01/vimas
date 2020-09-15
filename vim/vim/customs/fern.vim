@@ -2,6 +2,7 @@ let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 let g:loaded_netrwSettings = 1
 let g:loaded_netrwFileHandlers = 1
+let g:fern#disable_viewer_hide_cursor = 0
 
 augroup my-fern-hijack
   autocmd!

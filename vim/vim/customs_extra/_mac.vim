@@ -1,6 +1,6 @@
 " This file works on Mac OSX only!
 
-" (2) Switching tabs
+" (2) Tabs
 " Alt < to previous tab
 " Alt > to next tab
 " Alt n to create new tab
@@ -17,6 +17,12 @@ nnoremap <silent> ª   :tablast<CR>
 " nnoremap <silent> ø   :tabonly<CR>
 " CAUTION: be careful with tabclose and tabonly, as once closed, can't be restored
 
+" Tabs
+"nnoremap <C-Left> :tabprevious<CR>
+"nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <M-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <M-Down> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+" note: <M-Right> has no effect, possibly intercepted by the system
 
 " Mac OSX (Option as Normal key)
 " Alt ; to end

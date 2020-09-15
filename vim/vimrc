@@ -19,7 +19,7 @@ set vb t_vb=                " disable visualbell and window flashing when error 
 
 set hidden
 
-" == Indentation ==
+" ================ Indentation ======================
 set autoindent
 set smartindent " deprecated
 set smarttab
@@ -76,9 +76,6 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-" Turn off auto-indent when pasting text
-:set pastetoggle=<F3>
-
 " == Turn Off Swap Files ==
 set noswapfile
 set nobackup
@@ -95,9 +92,6 @@ if has('persistent_undo')
   set undolevels=5000
   set undoreload=10000
 endif
-
-" auto commands
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
 " ================ Custom Settings ========================
 so ~/.vim/load.vim

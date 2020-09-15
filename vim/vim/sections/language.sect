@@ -16,6 +16,7 @@ Plug 'SirVer/UltiSnips'
 
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'pechorin/any-jump.vim'
+Plug 'preservim/tagbar'
 
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'nelstrom/vim-markdown-preview'
@@ -25,7 +26,6 @@ Plug 'dag/vim-fish'
 Plug 'rust-lang/rust.vim'
 Plug 'kh3phr3n/python-syntax'
 Plug 'ocaml/merlin'
-Plug 'styled-components/vim-styled-components'
 Plug 'tbastos/vim-lua'
 Plug 'editorconfig/editorconfig-vim'
 
@@ -38,7 +38,7 @@ Plug 'jparise/vim-graphql'
 Plug 'alvan/vim-closetag'
 Plug 'mlaursen/vim-react-snippets'
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'hail2u/vim-css3-syntax' " updates vim's built-in css to support CSS3
+Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 
 Plug 'sheerun/vim-polyglot'
@@ -56,7 +56,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'juniway/indent-bar'
-Plug 'Chiel92/vim-autoformat'
+"Plug 'Chiel92/vim-autoformat'
 
 
 " Plug 'vimwiki/vimwiki', {'on': ['VimwikiDiaryIndex', 'VimwikiMakeDiaryNote']}

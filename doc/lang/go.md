@@ -19,12 +19,7 @@ then execute it as:
 GO111MODULE=on go get golang.org/x/tools/gopls@latest
 ```
 
-As long as we have installed it, we can use it in vim pretty easily:
-
-```viml
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-```
+As long as we have installed `gopls`, we may need to install a vim plugin(e.g. `coc.nvim` or `vim-go`) that can interact with it.
 
 **Load gopls as server**
 Sometimes we want to debug, we can load gopls as a server with `-rpc.trace` option
@@ -40,6 +35,44 @@ we can use `supervisor` to host gopls.
 plugin `vim-autoformat` integrats a lot of autoformatters for differenct languages. It will use `gofmt` & `goimports` to by default for golang files.
 
 ### gotags
+- jstemmer/gotags
+we can use gotags to work with tagbar to facilitates the definition overview or jump
+
+```
+go get -u github.com/jstemmer/gotags
+```
+
+config `customs/tagbar.vim` as below:
+
+```
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+```
 
 ### snippets
 - Shougo/neosnippet.vim

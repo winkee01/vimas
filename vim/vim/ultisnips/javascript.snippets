@@ -1,22 +1,6 @@
 # ==========================================
 # React Snippets
 #
-snippet rce "React class exported" b
-import React, { Component } from 'react'
-
-export default class ${1:`!v expand('%:t:r')`} extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {}
-    }
-
-    render() {
-        return null$0
-    }
-}
-endsnippet
-
 snippet imr "import React from 'react'" b
 import React from 'react';
 endsnippet
@@ -24,7 +8,11 @@ snippet imrc "import React, { Component } from 'react'" b
 import React, { Component } from 'react';
 endsnippet
 
-snippet rcc "React class component" b
+snippet imc "import sth from 'sth'" b
+import $1 from '$1';
+endsnippet
+
+snippet cc "React class component" b
 class $1 extends Component {
     render() {
         return null$0
@@ -40,12 +28,12 @@ constructor(props) {
 }
 endsnippet
 
-snippet fce "function component exported" b
-import React from 'react'
-
-const ${1:`!v expand('%:t:r')`} = props => {
-    return null$0
-}
-
+snippet exd "export default class" !b
 export default $1
+endsnippet
+
+snippet () "anonymous function" !wi
+() => {
+    $1
+}
 endsnippet
