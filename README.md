@@ -167,21 +167,21 @@ Please check `doc/*` for detailed introduction in how to install these dependenc
 - vim-snippets
 - vim-javascript
 
-
 ## Usage
+The usage documentation of each plugin has been updated in doc.
 
-TODO
+include:
 
 - Movement(vertically/horizontally, cross-file, etc)
-- <del>Ctags/Gtags</del>
-- Displaying: status, color, highlight, etc
-- Shortcuts/Mappings, utilities, etc
-- Project (fuzzy find, grep, etc)
-- Code Snippets, auto completion, syntax check, etc.
-- Code formatting, Commentiong, etc.
+- Appearance: status, color, highlight, etc.
+- Shortcuts: mappings, utility functions, etc.
+- Project: fuzzy find, grep, file manager, etc.
+- Coding:
+    + snippets, auto completion, linters, etc.
+    + auto-formatting, commenting, etc.
+    + tags: <del>Ctags/Gtags</del>
 - Text objects
 
-and more.
 
 
 ### Errors
@@ -193,20 +193,4 @@ Open `~/.vim/sections/language.plug`, below is a list of plugins you may want to
 - fatih/vim-go
 - natebosch/vim-lsc
 - neoclide/coc.nvim
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
