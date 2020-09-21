@@ -71,8 +71,7 @@ run `:checkhealth` to check the status of libraries required by `coc.nvim`.
 :CocInstall coc-eslint
 :CocInstall coc-json coc-css
 :CocInstall coc-rls
-
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+:CocInstall coc-tsserver
 ```
 
 

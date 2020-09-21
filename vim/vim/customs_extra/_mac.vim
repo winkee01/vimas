@@ -25,10 +25,11 @@ nnoremap <silent> <M-Down> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 " note: <M-Right> has no effect, possibly intercepted by the system
 
 " Mac OSX (Option as Normal key)
-" Alt ; to end
-" Alt , to begin
-inoremap … <ESC>A
+" Jump in INSERT mode
+" Alt , move cursor to line begin
+" Alt ; move cursor to line end
 inoremap ≤ <ESC>I
+inoremap … <ESC>A
 
 " Mac OSX (Option as Meta key)
 " execute "set <M-;>=\e;"
@@ -37,9 +38,11 @@ inoremap ≤ <ESC>I
 " inoremap <M-,> <ESC>I
 
 " Mac OSX (Option key as Normal)
+" Move line up/down
 " Alt j move down
 " Alt k move up
-" Note: due to vim's bugs, this may behave abnormally
+" Note 1): due to vim's bugs, this may behave abnormally
+" Note 2): tpope/vim-unimpaired also has [e and ]e to move line up/down
 nnoremap ∆ :m .+1<CR>gv==gv
 nnoremap ˚ :m .-2<CR>gv==gv
 inoremap ∆ <Esc>:m .+1<CR>gv==gvi
@@ -57,6 +60,10 @@ vnoremap ˚ :m '<-2<CR>gv=gv
 " vnoremap <M-j> :m '>+1<CR>gv=gv
 " vnoremap <M-k> :m '<-2<CR>gv=gv
 
+" Mac OSX (Option key as Meta)
 " Change list
+" Jump between change list
+" Alt - move cursor to previous change
+" Alt + move cursor to next change
 nnoremap – g;
 nnoremap ≠ g,

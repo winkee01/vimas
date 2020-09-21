@@ -95,3 +95,8 @@ endif
 
 " ================ Custom Settings ========================
 so ~/.vim/load.vim
+
+"call plug#begin('~/.vim/plugged')
+"Plug 'neovim/nvim-lspconfig'
+"call plug#end()
+"lua require'nvim_lsp'.gopls.setup{}

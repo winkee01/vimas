@@ -69,6 +69,10 @@ let &packpath = &runtimepath
 source ~/.vimrc
 ```
 
+#### (4) mappings
+
+All mappings resides in `vim/customs_extra` directory, `_mac.vim` is used only for Mac OSX system with respect to its `Meta` key, if you are using other platforms, you may need a corresponding config file like `_linux.vim` to make sure the mappings will work as expected. It's easy, you can just copy `_mac.vim` and change the meta key settings to something like `<M-x>` in your linux systems.
+
 ## Introduction
 This project provides basic configuration files for the programming environmental setup. The included settings are for git, tmux, ctags and vim.
 

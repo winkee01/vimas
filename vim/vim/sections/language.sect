@@ -46,7 +46,8 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'skwp/vim-html-escape'
 " Plug 'jparise/vim-graphql'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'natebosch/vim-lsc'
 " Plug 'ajh17/VimCompletesMe'
 " Plug 'neomake/neomake', { 'for': ['rust', 'haskell', 'typescript'] }
@@ -58,5 +59,8 @@ Plug 'godlygeek/tabular'
 Plug 'juniway/indent-bar'
 "Plug 'Chiel92/vim-autoformat'
 
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
 
 " Plug 'vimwiki/vimwiki', {'on': ['VimwikiDiaryIndex', 'VimwikiMakeDiaryNote']}
