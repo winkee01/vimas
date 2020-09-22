@@ -39,12 +39,15 @@ The issue is known but there’s no solution. I’ve tried `typescript-vim` and 
 ### Snippets
 #### React
 - mlaursen/vim-react-snippets
--
 Also, `honza/vim-snippets` has already included ES6 snippets for ReactJs in its `javascript-es6-react.snippets` file
 
 
 ### Formatter
 `coc-prettier` can be used to format javascript code.
+
+or plugin `prettier/vim-prettier`
+
+`vim-autoformat` will also do the job, but maybe slow?
 
 ### LSP (for intellisense, autocompletion, etc)
 

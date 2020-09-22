@@ -9,4 +9,3 @@ set background=dark
 command! CDC cd %:p:h
 autocmd FileType text,markdown,tex setlocal textwidth=80
 au BufRead,BufNewFile *.md setlocal textwidth=80
-lua require'nvim_lsp'.gopls.setup{}

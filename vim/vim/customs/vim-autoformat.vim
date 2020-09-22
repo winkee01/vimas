@@ -16,4 +16,4 @@ au BufWrite * :Autoformat
 " let g:formatdef_gofmt_2 = '"gofmt"'
 " let g:formatdef_goimports = '"goimports"'
 
-autocmd FileType markdown,tex,js,python let b:autoformat_autoindent=0
+autocmd FileType markdown,tex,javascript,python let b:autoformat_autoindent=0

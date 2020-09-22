@@ -7,19 +7,21 @@ nvim_lsp.clangd.setup{
 }
 
 -- lua
-nvim_lsp.tsserver.setup{}
+nvim_lsp.sumneko_lua.setup{}
 
 -- gopls
 nvim_lsp.gopls.setup{
-  root_dir = nvim_lsp.util.root_pattern('.git', 'go.mod', 'main.go');
+    root_dir = nvim_lsp.util.root_pattern('.git', 'go.mod', 'main.go');
 }
 
 -- rust
 nvim_lsp.rls.setup{}
 
--- tsserver
+-- typescript
 -- npm i -g typescript typescript-language-server
+-- nvim_lsp.tsserver.setup{on_attach=require'diagnostic'.on_attach}
 nvim_lsp.tsserver.setup{}
+nvim_lsp.rome.setup{}
 
 -- python3
 -- python3 -m pip install python-language-server
