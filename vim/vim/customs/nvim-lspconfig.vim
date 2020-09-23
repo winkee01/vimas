@@ -28,6 +28,7 @@ nvim_lsp.rome.setup{}
 nvim_lsp.pyls.setup{}
 
 -- viml
+-- npm install -g vim-language-server
 nvim_lsp.vimls.setup{}
 EOF
 

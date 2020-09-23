@@ -6,13 +6,15 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'tpope/vim-endwise'
 " Plug 'rstacruz/vim-closer'
+Plug 'alvan/vim-closetag'
 
 Plug 'tomtom/tcomment_vim'
-Plug 'honza/vim-snippets'
 Plug 'SirVer/UltiSnips'
 " Plug 'MarcWeber/vim-addon-mw-utils'
 " Plug 'tomtom/tlib_vim'
 " Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
+Plug 'mlaursen/vim-react-snippets'
 
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'pechorin/any-jump.vim'
@@ -31,20 +33,18 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Web design
 Plug 'mattn/emmet-vim'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'pangloss/vim-javascript'
+"Plug 'pangloss/vim-javascript'
 Plug 'elzr/vim-json'
 Plug 'jparise/vim-graphql'
-Plug 'alvan/vim-closetag'
-Plug 'mlaursen/vim-react-snippets'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'sheerun/vim-polyglot'
 " Plug "mattn/webapi-vim.git"
 " Plug 'skwp/vim-html-escape'
-" Plug 'jparise/vim-graphql'
 
 "Plug 'nvim-lua/diagnostic-nvim'
 Plug 'neovim/nvim-lspconfig'
@@ -54,11 +54,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'neomake/neomake', { 'for': ['rust', 'haskell', 'typescript'] }
 " Plug 'w0rp/ale'
 
-" Format
+" Formatting
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'juniway/indent-bar'
 Plug 'Chiel92/vim-autoformat'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
