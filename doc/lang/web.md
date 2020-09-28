@@ -38,7 +38,7 @@ The issue is known but there’s no solution. I’ve tried `typescript-vim` and 
 #### (1) Formatting Tools
 there are many independent **formatting tools** for web development, for example:
 
-- **`prettier`** 
+- **`prettier`**
 - **`js-beautify`**
 - **`jscs`**
 - **`standard`**
@@ -163,10 +163,10 @@ module.exports = {
 
 Check [this](https://babeljs.io/blog/2020/07/13/the-state-of-babel-eslint) or [issue/788](https://github.com/babel/babel-eslint/issues/788) out for more details.
 
-##### Question: 
+##### Question:
 Is it ok to install ESlint globally?
 
-##### Answer: 
+##### Answer:
 Yes it is, but **not recommended** as stated in the official site, because they think a shareable config across all javascript projects is a bad idea. **I don't hold that point though because it adds unnecessary complexity and loses the flexibility**.
 
 ##### Notes:
@@ -187,7 +187,14 @@ The command executed in the behind is:
 npm install eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest
 ```
 
-upon success, message will be shown:
+##### 1) HTML
+```
+mattn/emmet-vim
+```
+
+##### 2) for TypeScript
+
+
 ```
 + eslint-plugin-react@7.21.1
 + @typescript-eslint/eslint-plugin@4.2.0
@@ -228,7 +235,14 @@ upon success, message will be shown:
 Notice:
 If using Typescript with React, the `eslint-plugin-react` should be installed.
 
-If we want a full-fledged or template setting of ESlint for our project, we can searching for "eslint-config" on npmjs.com. 
+**vim plugins for typescript linting**
+
+```
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+```
+
+If we want a full-fledged or template setting of ESlint for our project, we can searching for "eslint-config" on npmjs.com.
 
 ##### Error Level
 **Error Level** may be the most important concept with regard to a linter, for ESlint, there are three switches can be set into rules:

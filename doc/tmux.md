@@ -4,7 +4,7 @@ prefix: ctrl + a
 switch session: prefix + )
 switch window: prefix + p/n
 switch pane: prefix + i/j/k/l
-swap pane: prefix + [/]
+swap pane: prefix + {/}
 
 horizontal split
 prefix + " or prefix + -
