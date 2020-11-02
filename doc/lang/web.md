@@ -107,6 +107,7 @@ A list of LSP for the popular languages are:
 ###### Javascript & TypeScript
 - **`typescript-language-server`**
 - **`rome`**
+- **`flow`**
 
 ###### Viml
 - **`vimls`**

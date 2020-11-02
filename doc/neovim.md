@@ -69,7 +69,7 @@ In Neovim, Python is not supported out of the box. If you want to use plugins an
 To enable the Python 3 provider, you need to install the Python client.5 You can get this using pip:
 
 ```
-➾ $ pip3 install --user --upgrade neovim
+pip3 install --upgrade neovim
 ``
 
 Now restart Neovim and try running this command:

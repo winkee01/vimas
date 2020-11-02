@@ -10,6 +10,8 @@ alias cnew 'cargo new'
 alias ctest 'cargo test'
 alias tmux 'tmux -2'
 alias tn 'tmuxinator'
+alias lc 'colorls'
+alias ssh 'TERM=xterm-256color ssh'
 
 # Application aliases
 # alias gbs 'gitbook serve'
