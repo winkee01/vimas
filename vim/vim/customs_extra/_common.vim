@@ -9,3 +9,6 @@ set background=dark
 command! CDC cd %:p:h
 autocmd FileType text,markdown,tex setlocal textwidth=80
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" Nerd Fonts
+set guifont=Hack_Regular_Nerd_Font_Complete_Mono:11

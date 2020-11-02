@@ -40,3 +40,6 @@ Plug 'jaredgorski/fogbell.vim'
 Plug 'Lokaltog/vim-distinguished'
 Plug 'wesgibbs/vim-irblack' "ir_black"
 Plug 'vim-scripts/peaksea' "peaksea
+
+Plug 'ryanoasis/vim-devicons'
+Plug 'lambdalisue/glyph-palette.vim'

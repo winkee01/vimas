@@ -8,6 +8,9 @@ Plug 'airblade/vim-rooter'
 
 Plug 'antoinemadec/FixCursorHold.nvim'
 Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+
 " plug 'rking/ag.vim'
 " Plug 'Shougo/defx.nvim'
 " Plug 'roxma/nvim-yarp'
