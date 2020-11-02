@@ -29,7 +29,10 @@ Plug 'rust-lang/rust.vim'
 Plug 'kh3phr3n/python-syntax'
 Plug 'ocaml/merlin'
 Plug 'tbastos/vim-lua'
+Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'pboettch/vim-cmake-syntax'
+Plug 'ilyachur/cmake4vim'
 
 " Web design
 Plug 'mattn/emmet-vim'

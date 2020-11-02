@@ -2,7 +2,7 @@
 " set t_ut=
 "set termguicolors
 "let base16colorspace=256
-colorscheme Yin
+colorscheme molokai
 set background=dark
 
 " Enter the directory of current opened file
