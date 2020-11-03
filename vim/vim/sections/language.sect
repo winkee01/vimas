@@ -49,7 +49,6 @@ Plug 'sheerun/vim-polyglot'
 " Plug "mattn/webapi-vim.git"
 " Plug 'skwp/vim-html-escape'
 
-"Plug 'nvim-lua/diagnostic-nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/completion-nvim'

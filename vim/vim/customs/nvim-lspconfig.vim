@@ -1,3 +1,6 @@
+" Default settings are located in:
+" https://github.com/neovim/nvim-lspconfig/tree/master/lua/nvim_lsp/*.lua
+
 lua <<EOF
 local nvim_lsp = require'nvim_lsp'
 local lsp_status = require('lsp-status')
@@ -33,7 +36,6 @@ lsp_status.config({
 
 -- clangd
 nvim_lsp.clangd.setup{
-    root_dir = nvim_lsp.util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
     on_attach = on_attach
 }
 
