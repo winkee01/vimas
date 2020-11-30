@@ -12,6 +12,7 @@ alias tmux 'tmux -2'
 alias tn 'tmuxinator'
 alias lc 'colorls'
 alias ssh 'TERM=xterm-256color ssh'
+alias 
 
 # Application aliases
 # alias gbs 'gitbook serve'
@@ -38,6 +39,11 @@ function ll
     else
         env CLICOLOR_FORCE=1 ls -lhtG $argv | awk '/^total/{next;} {print $6" "$7" "$8" "$9}'
     end
+end
+
+# Works in unix
+function ip-addr
+    ifconfig en0| grep \"inet[ ]\" | awk '{print \$2}'
 end
 
 function la

@@ -13,7 +13,7 @@ end
 set -gx LC_ALL en_US.UTF-8
 # set -Ux LANG en_US.UTF-8
 
-set -gx FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git'"
+set -gx FZF_DEFAULT_COMMAND "rg --files --hidden --follow --glob '!.git'"
 
 #set -gx LLVM_HOME /opt/llvm
 #set -gx LD_LIBRARY_PATH /usr/local/lib:/opt/llvm/lib $LD_LIBRARY_PATH:
