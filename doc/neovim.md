@@ -26,6 +26,9 @@ sudo pip install --upgrade pip setuptools
 python -m pip install --user --upgrade pynvim
 ```
 
+### Post-Install
+Run `:checkhealth` in nvim to see are there anything missed.
+
 ## Introduction
 Vim 8 and Neovim follow different conventions on where to keep their config- uration files. Vim 8 typically places them in a `~/.vim` directory, whereas Neovim uses the `~/.config/nvim` directory. 
 
@@ -66,19 +69,19 @@ source ~/.vim/vimrc
 ## Python Support
 In Neovim, Python is not supported out of the box. If you want to use plugins and tools that are implemented in Python (such as neovim-remote), then you’ll have to install the Python client.
 
-To enable the Python 3 provider, you need to install the Python client.5 You can get this using pip:
+To enable the Python 3 provider, you need to install the Python client. You can get this using pip:
 
 ```
 pip3 install --upgrade neovim
-``
+```
 
 Now restart Neovim and try running this command:
+
 ```
 :py3 print('hello') ❮ hello
 ```
+
 You’ll see the hello message printed.
 
-
-
-reference:
+##### Reference:
 https://github.com/neovim/neovim/wiki/Installing-Neovim

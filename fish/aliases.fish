@@ -12,7 +12,6 @@ alias tmux 'tmux -2'
 alias tn 'tmuxinator'
 alias lc 'colorls'
 alias ssh 'TERM=xterm-256color ssh'
-alias 
 
 # Application aliases
 # alias gbs 'gitbook serve'

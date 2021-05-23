@@ -7,6 +7,7 @@ Plug 'jiangmiao/auto-pairs'
 " Plug 'tpope/vim-endwise'
 " Plug 'rstacruz/vim-closer'
 Plug 'alvan/vim-closetag'
+Plug 'kien/rainbow_parentheses.vim'
 
 Plug 'tomtom/tcomment_vim'
 Plug 'SirVer/UltiSnips'
@@ -63,11 +64,11 @@ Plug 'nvim-lua/completion-nvim'
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'juniway/indent-bar'
-Plug 'Chiel92/vim-autoformat'
+"Plug 'Chiel92/vim-autoformat'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'google/vim-maktaba'
-Plug 'google/vim-codefmt'
+"Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 
 " Plug 'vimwiki/vimwiki', {'on': ['VimwikiDiaryIndex', 'VimwikiMakeDiaryNote']}

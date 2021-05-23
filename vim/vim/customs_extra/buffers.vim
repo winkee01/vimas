@@ -1,4 +1,4 @@
-" Providing functions that can close [No Name] buffers
+" Functions that close [No Name] buffers
 " Reference: https://stackoverflow.com/questions/6552295/deleting-all-empty-buffers-in-vim
 " Note: can't delete modified [No Name] buffers
 
@@ -25,8 +25,8 @@ function! CleanEmptyBuffers()
     endif
 endfunction
 
-"here is a more exotic version of my original Kwbd script
-"delete the buffer; keep windows; create a scratch buffer if no buffers left
+" here is a more exotic version of my original Kwbd script
+" delete the buffer; keep windows; create a scratch buffer if no buffers left
 function s:Kwbd(kwbdStage)
   if(a:kwbdStage == 1)
     if(&modified)

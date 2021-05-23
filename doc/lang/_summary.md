@@ -13,4 +13,9 @@ The general tools for building a local development environment adapting to multi
 #### Rust
 
 
+## Set filetype
+We can forcely set current file to a specific type by this command:
 
+```
+:set syntax=yaml
+```
