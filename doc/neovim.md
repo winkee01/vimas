@@ -62,8 +62,9 @@ mkdir -p ~/.config/nvim/
 Next, create and save a `~/.config/nvim/init.vim` file with the following contents:
 
 ```
-set runtimepath^=~/.vim runtimepath+=~/.vim/after let &packpath = &runtimepath
-source ~/.vim/vimrc
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vimrc
 ```
 
 ## Python Support
