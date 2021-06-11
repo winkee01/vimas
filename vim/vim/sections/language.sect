@@ -50,9 +50,9 @@ Plug 'sheerun/vim-polyglot'
 " Plug 'skwp/vim-html-escape'
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
 Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/completion-nvim'
-Plug 'nvim-lua/diagnostic-nvim'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'natebosch/vim-lsc'
 " Plug 'ajh17/VimCompletesMe'
