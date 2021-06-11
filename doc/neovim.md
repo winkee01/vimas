@@ -67,8 +67,37 @@ let &packpath = &runtimepath
 source ~/.vimrc
 ```
 
+## clipboard
+neovim is not able to speak to the system clipboard directly. Instead it calls an external program as a provider. In linux, it will look for `xsel` or `xclip`, whichever is available and use that to talk to the clipboard.
+
+This information is all found in :h clipboard which is where neovim instructed you to look when you encountered the error.
+
+error
+
+```
+## Clipboard (optional)
+  - WARNING: No clipboard tool found. Clipboard registers (`"+` and `"*`) will not work.
+    - ADVICE:
+      - :help clipboard
+```
+
+
+**Ubuntu**
+
+```shell
+sudo apt-get install -y xsel xclip
+```
+
+**Usage:**
+
+```
+xclip -selection clipboard testfile.txt
+xsel testfile.txt 
+xsel --clipboard < testfile.txt 
+```
+
 ## Python Support
-In Neovim, Python is not supported out of the box. If you want to use plugins and tools that are implemented in Python (such as neovim-remote), then you’ll have to install the Python client.
+In Neovim, Python is not supported out of the box. If you want to use plugins and tools that are implemented in Python (e.g. `neovim-remote`), then you’ll have to install the Python client.
 
 To enable the Python 3 provider, you need to install the Python client. You can get this using pip:
 
@@ -83,6 +112,35 @@ Now restart Neovim and try running this command:
 ```
 
 You’ll see the hello message printed.
+
+**errors**
+
+```yaml
+## Python 2 provider (optional)
+  - WARNING: No Python executable found that can `import neovim`. Using the first available executable for diagnostics.
+  - ERROR: Python provider error:
+    - ADVICE:
+      - provider/pythonx: Could not load Python 2:
+          python2 not found in search path or not executable.
+          python2.7 not found in search path or not executable.
+          python2.6 not found in search path or not executable.
+          python not found in search path or not executable.
+  - INFO: Executable: Not found
+
+## Python 3 provider (optional)
+  - WARNING: No Python executable found that can `import neovim`. Using the first available executable for diagnostics.
+  - ERROR: Python provider error:
+    - ADVICE:
+      - provider/pythonx: Could not load Python 3:
+          /usr/bin/python3 does not have the "neovim" module. :help provider-python
+          python3.10 not found in search path or not executable.
+          /usr/bin/python3.9 does not have the "neovim" module. :help provider-python
+          python3.8 not found in search path or not executable.
+          python3.7 not found in search path or not executable.
+          python3.6 not found in search path or not executable.
+          python not found in search path or not executable.
+  - INFO: Executable: Not found
+```
 
 ##### Reference:
 https://github.com/neovim/neovim/wiki/Installing-Neovim
