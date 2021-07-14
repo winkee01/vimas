@@ -34,6 +34,7 @@ Plug 'chrisbra/NrrwRgn'
 Plug 'bronson/vim-visual-star-search'
 " Plug 'haya14busa/incsearch.vim'
 " Plug 'henrik/vim-indexed-search'
+Plug 'lfv89/vim-interestingwords'
 
 " Profiling
 Plug 'tweekmonster/startuptime.vim'

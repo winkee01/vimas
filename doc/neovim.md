@@ -114,7 +114,7 @@ Now restart Neovim and try running this command:
 You’ll see the hello message printed.
 
 **errors**
-
+   
 ```yaml
 ## Python 2 provider (optional)
   - WARNING: No Python executable found that can `import neovim`. Using the first available executable for diagnostics.
