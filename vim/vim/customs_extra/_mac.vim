@@ -25,11 +25,11 @@ nnoremap <silent> <M-Down> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 " note: <M-Right> has no effect, possibly intercepted by the system
 
 " Mac OSX (Option as Normal key)
-" Jump in INSERT mode
+" In INSERT mode
 " Alt , move cursor to line begin
 " Alt ; move cursor to line end
-inoremap ≤ <ESC>I
-inoremap … <ESC>A
+inoremap <silent> ≤ <ESC>I
+inoremap <silent> … <ESC>A
 
 " Mac OSX (Option as Meta key)
 " execute "set <M-;>=\e;"
@@ -43,22 +43,22 @@ inoremap … <ESC>A
 " Alt k move up
 " Note 1): due to vim's bugs, this may behave abnormally
 " Note 2): tpope/vim-unimpaired also has [e and ]e to move line up/down
-nnoremap ∆ :m .+1<CR>gv==gv
-nnoremap ˚ :m .-2<CR>gv==gv
-inoremap ∆ <Esc>:m .+1<CR>gv==gvi
-inoremap ˚ <Esc>:m .-2<CR>gv==gvi
-vnoremap ∆ :m '>+1<CR>gv=gv
-vnoremap ˚ :m '<-2<CR>gv=gv
+nnoremap <silent> ∆ :m .+1<CR>gv==gv
+nnoremap <silent> ˚ :m .-2<CR>gv==gv
+inoremap <silent> ∆ <Esc>:m .+1<CR>gv==gvi
+inoremap <silent> ˚ <Esc>:m .-2<CR>gv==gvi
+vnoremap <silent> ∆ :m '>+1<CR>gv=gv
+vnoremap <silent> ˚ :m '<-2<CR>gv=gv
 
 " Mac OSX (Option key as Meta)
 " execute "set <M-j>=\ej"
 " execute "set <M-k>=\ek"
-" nnoremap <M-j> :m .+1<CR>==
-" nnoremap <M-k> :m .-2<CR>==
-" inoremap <M-j> <Esc>:m .+1<CR>==gi
-" inoremap <M-k> <Esc>:m .-2<CR>==gi
-" vnoremap <M-j> :m '>+1<CR>gv=gv
-" vnoremap <M-k> :m '<-2<CR>gv=gv
+" nnoremap <silent> <M-j> :m .+1<CR>==
+" nnoremap <silent> <M-k> :m .-2<CR>==
+" inoremap <silent> <M-j> <Esc>:m .+1<CR>==gi
+" inoremap <silent> <M-k> <Esc>:m .-2<CR>==gi
+" vnoremap <silent> <M-j> :m '>+1<CR>gv=gv
+" vnoremap <silent> <M-k> :m '<-2<CR>gv=gv
 
 " Mac OSX (Option key as Meta)
 " Change list

@@ -23,7 +23,7 @@ nmap <Leader>' :Marks<CR>
 
 " Project Finder
 "nmap <Leader>/ :Ag<Space>
-nmap <Leader>/ :Rg<Space>
+" nmap <Leader>/ :Rg<Space>
 
 " Help Finder
 nmap <Leader>H :Helptags!<CR>

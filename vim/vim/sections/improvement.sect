@@ -1,5 +1,6 @@
 Plug 'tpope/vim-surround'
 Plug 'briandoll/change-inside-surroundings.vim'
+Plug 'machakann/vim-sandwich'
 
 Plug 'justinmk/vim-sneak'
 Plug 'andymass/vim-matchup'
@@ -42,3 +43,5 @@ Plug 'tweekmonster/startuptime.vim'
 "Plug 'terryma/vim-expand-region'
 "Plug 'mhinz/vim-startify'
 "Plug 'ervandew/supertab'
+
+Plug 'liuchengxu/vim-which-key'

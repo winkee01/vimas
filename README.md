@@ -17,8 +17,15 @@ Update your vim to the latest version(vim 8.0+).
 One command setting up of vim-based developmental environment.
 
 ```shell
-bash <(curl -fsSL https://raw.githubusercontent.com/winkee01/vim2020/master/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/winkee01/vimas/master/install.sh)
 ```
+**Note**
+Since the installation include a bunch of default plugins, and some plugins has some
+dependencies, if you don't have the dependencies, the plugins will fail to
+install, but it won't affect the whole install process.
+
+For example, `vim-prettier` is installed by default, and it needs `yarn`, if you
+don't have `yarn` in your system, the plugin will fail to install.`
 
 ## Installation
 
@@ -149,6 +156,22 @@ as shown, all plugins are installed into `~/.vim/plugged` by default.
 
 In addition to the installation of the plugins, customized configuration files are placed in `vim/customs` directory, we can modify them as needed.
 
+### Root Usage
+Usually, we set up our vim configurations for our current user in `~/.vim` and `~/.vimrc`. However, when we use `sudo vim ...`, we cannot use these custom settings, to enable root user can also use these settings, we can do this:
+
+```
+sudo ln -s ~/.vim /root/.vim
+sudo ln -s ~/.vimrc /root/.vimrc
+sudo ln -s ~/.config/nvim/init.vim /root/.config/nvim/init.vim
+```
+
+If you are using nvim and set an alias for **nvim**, you can enbalbe it for all users by adding a line `alias vim='nvim'` in `/etc/bash.bashrc`:
+
+If you want `sudo` to be able to use alias, you can add this into `~/.bashrc`
+
+```
+alias sudo='sudo '
+```
 
 ### Supported Language
 
