@@ -10,9 +10,9 @@ yum install -y neovim python3-neovim
 ```
 
 ### Python 2 & Python 3 Support
-Some plugins need python 2 or python 3 to be installed so that they can function correctly.
+Some plugins need `python 2` or `python 3` to be installed so that they can function correctly.
 
-The most common library we need it **pynvim**, use below instructions to install it.
+The most common library we need is **`pynvim`**, use below instructions to install it.
 
 ```shell
 sudo yum install python-pip

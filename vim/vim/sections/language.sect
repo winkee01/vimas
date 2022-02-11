@@ -49,6 +49,7 @@ Plug 'google/vim-glaive'
 
 " 2. Pair Matching
 Plug 'jiangmiao/auto-pairs'
+"Plug 'Raimondi/delimitMate'
 " Plug 'tpope/vim-endwise'
 " Plug 'rstacruz/vim-closer'
 Plug 'alvan/vim-closetag'
@@ -74,11 +75,22 @@ Plug 'preservim/tagbar'
 Plug 'pechorin/any-jump.vim'
 
 " 6. nvim-lsp
-" Plug 'neovim/nvim-lspconfig'
-" Plug 'kabouzeid/nvim-lspinstall'
-" Plug 'nvim-lua/lsp-status.nvim'
-" Plug 'nvim-lua/completion-nvim' deprecated
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'nvim-lua/lsp-status.nvim'
 
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
+
+
+" Plug 'nvim-lua/completion-nvim' deprecated supperseded by `nvim-cmp` or `coq_nvim`
+" Plug 'hrsh7th/nvim-compe' deprecated, supperseded by `nvim-cmp`
+" Plug 'kabouzeid/nvim-lspinstall' deprecated, supperseded by 'nvim-lsp-installer'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'natebosch/vim-lsc'
 " Plug 'ajh17/VimCompletesMe'

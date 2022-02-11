@@ -44,9 +44,12 @@ nnoremap <c-p> :bp<CR>
 " Search & Replace
 
 " 1) Search words under the cursor
+" press s/ to search current word
+" press <leader>/ to search a whole word in ex mode (need to type the word)
+nnoremap <silent> <expr> s/ ':/\<'.expand('<cword>').'\><CR>'
+nnoremap <leader>/ /\<\><left><left>
 ":execute "normal! /\\<".expand('<cword>')."\\>\<cr>"
 ":execute "/\\<".expand('<cword>')."\\>"
-nnoremap <leader>/ /\<\><left><left>
 
 fun! s:wrap()
     let l = getcmdline()
@@ -99,9 +102,8 @@ nnoremap <expr> <F8> ':%s/\<'.expand('<cword>').'\>/<&>/g<CR>'
 xnoremap <expr> <F8> ':s#\<'.expand('<cword>').'\>#<&>#g<CR>'
 
 
-"Replace one by one, press . to repeat
-" This is a super useful mapping
-" cation: below mapping may cause delay when press single s.
+"Replace whoe word one by one, press . to repeat
+" cation: below mapping may cause delay when press single s
 nnoremap <silent> s* :let @/='\<'.expand('<cword>').'\>'<CR>cgn
 xnoremap <silent> s* "sy:let @/=@s<CR>cgn
 
@@ -159,14 +161,14 @@ nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 " Ctrl+Y redo
 vmap <C-c> "+y
 vmap <C-x> "+c
-nmap <C-v> i<CR>"+gP<CR>
+nmap <C-v> "+gP
 vmap <C-v> "+p
-imap <C-v> <C-r><C-o>"+
+imap <C-v> <C-r><C-o>"
 imap <C-s> <ESC>:w<CR>
-nmap <C-q> :wq<CR>
-imap <C-q> <ESC>:wq<CR>
+" nmap <C-q> :wq<CR>
+" imap <C-q> <ESC>:wq<CR>
 nmap <C-a> ggVG<CR>
-imap <C-a> <ESC>ggVR<CR>i
+imap <C-a> <ESC>ggVG<CR>i
 imap <C-f> <ESC>/
 nmap <C-f> /
 " imap <C-z> <ESC>u<CR>i
