@@ -3,10 +3,10 @@
 " JSON, HTML, Ruby, CSS/SCSS/Less, Shell, Ocaml, etc.
 
 " Autoformat command
-"noremap <F3> :Autoformat<CR>
+" noremap <F3> :Autoformat<CR>
 
 " automatically execute upon save
-"au BufWrite * :Autoformat
+au BufWrite * :Autoformat
 
 
 " Golang

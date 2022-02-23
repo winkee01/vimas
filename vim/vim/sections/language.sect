@@ -1,14 +1,11 @@
 " 1. Language Integration
 " 1.1 Highlighting (Syntax, Yank)
-Plug 'ekalinin/Dockerfile.vim'
 "Plug 'gabrielelana/vim-markdown'
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'machakann/vim-highlightedyank'
-
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'nelstrom/vim-markdown-preview'
-
-" Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'dag/vim-fish'
 Plug 'rust-lang/rust.vim'
 Plug 'kh3phr3n/python-syntax'
@@ -20,8 +17,8 @@ Plug 'pboettch/vim-cmake-syntax'
 Plug 'ilyachur/cmake4vim'
 
 " Web design
-Plug 'mattn/emmet-vim'
 "Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
 Plug 'elzr/vim-json'
 Plug 'jparise/vim-graphql'
 Plug 'HerringtonDarkholme/yats.vim'
@@ -29,7 +26,6 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-
 Plug 'sheerun/vim-polyglot'
 " Plug "mattn/webapi-vim.git"
 " Plug 'skwp/vim-html-escape'
@@ -38,12 +34,11 @@ Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/vim-easy-align'
 Plug 'godlygeek/tabular'
 Plug 'juniway/indent-bar'
-"Plug 'Chiel92/vim-autoformat'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
+Plug 'Chiel92/vim-autoformat'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'google/vim-maktaba'
-"Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
+"Plug 'google/vim-codefmt'
 
 " Plug 'vimwiki/vimwiki', {'on': ['VimwikiDiaryIndex', 'VimwikiMakeDiaryNote']}
 
@@ -58,8 +53,6 @@ Plug 'kien/rainbow_parentheses.vim'
 " 3. Add Comment
 Plug 'tomtom/tcomment_vim'
 " Plug 'tpope/vim-commentary'
-
-
 
 " 4. Language Snippets
 Plug 'SirVer/UltiSnips'

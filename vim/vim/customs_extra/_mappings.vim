@@ -8,7 +8,9 @@ nnoremap <leader>WQ :wa<CR>:q<CR>
 nnoremap <leader>Q :qa<CR>
 nnoremap <Leader>b :ls<CR>:b<Space>
 "nnoremap <Leader>r :e .<CR>
-nnoremap <cr> i<CR><ESC>
+nnoremap <CR> i<CR><ESC><Right>
+" nnoremap <TAB> >>
+" nnoremap <S-TAB> <<
 
 nnoremap 0 ^
 nnoremap ^ 0
@@ -40,6 +42,16 @@ nnoremap <c-0> <c-w>>
 nnoremap <c-n> :bn<CR>
 nnoremap <c-p> :bp<CR>
 
+" vil/yil to select/yank the whole line without line break
+xnoremap il ^og_
+onoremap <silent> il :normal vil<CR>
+
+" c= or c: to change word around = or :
+" you can also use 2wC
+onoremap = :normal! f=wve<CR>
+onoremap + :normal! f=wvE<CR>
+onoremap ;; :normal! f:wve<CR>
+onoremap : :normal! f:wvE<CR>
 
 " Search & Replace
 
@@ -160,8 +172,8 @@ nnoremap <expr> j (v:count > 5 ? "m'" . v:count : "") . 'j'
 " Ctrl+Z undo 
 " Ctrl+Y redo
 vmap <C-c> "+y
-vmap <C-x> "+c
-nmap <C-v> "+gP
+" vmap <C-x> "+c conflict with ctrl-v in normal mode
+"nmap <C-v> "+gP conflict with ctrl-v in visual mode
 vmap <C-v> "+p
 imap <C-v> <C-r><C-o>"
 imap <C-s> <ESC>:w<CR>

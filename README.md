@@ -1,5 +1,5 @@
 ## Introduction
-Vim2020 project provides the most advanced vim configurations for setting up a matured development environment.
+Vimas project provides the most advanced vim configurations for setting up a matured development environment.
 
 The feature included are:
 - The lastest and the most comprehensive plugin collections, save your search time
